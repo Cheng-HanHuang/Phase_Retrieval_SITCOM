@@ -1,0 +1,19 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq #imagenet #ffhq
+  #root: ./data/demo/
+  root: ./data/demo_remain2/
+  #root: ./data/gb_imagenet/ 
+measurement:
+  operator:
+    name: gaussian_blur
+    kernel_size: 61
+    intensity: 3.0
+  
+  noise: 
+    name: gaussian
+    sigma: 0.2

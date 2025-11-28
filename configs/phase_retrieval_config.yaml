@@ -1,0 +1,18 @@
+conditioning:
+  method: ps
+  params:
+    scale: 1.0
+
+data:
+  name: imagenet #ffhq
+  #root: ./data/demo/
+  #root: ./data/demo_remain2/
+  root: ./data/phase_imagenet/ 
+measurement:
+  operator:
+    name: phase_retrieval
+    oversample: 2.0
+
+  noise: 
+    name: gaussian
+    sigma: 0.05

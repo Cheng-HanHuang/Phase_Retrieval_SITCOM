@@ -1,0 +1,20 @@
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~*
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# Big directories / artifacts
+models/

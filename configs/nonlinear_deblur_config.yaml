@@ -1,0 +1,23 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq #ffhq
+  root: ./data/demo_remain2/
+  #root: ./data/demo_remain/
+  #root: ./data/NLDB_imagenet/ 
+
+measurement:
+  operator:
+    name: nonlinear_blur
+    opt_yml_path: ./bkse/options/generate_blur/default.yml
+
+  noise: 
+    name: gaussian
+    sigma: 0.05
+#   noise: 
+#     name: poisson #gaussian
+#     rate: 1
+

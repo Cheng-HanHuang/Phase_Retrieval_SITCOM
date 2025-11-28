@@ -1,0 +1,18 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name:  imagenet #ffhq
+  #root: ./data/demo/
+  #root: ./data/demo_remain2/
+  root: ./data/imagenet/ 
+measurement:
+  operator:
+    name: high_dynamic_range
+    scale: 2
+  
+  noise: 
+    name: gaussian
+    sigma: 0.05

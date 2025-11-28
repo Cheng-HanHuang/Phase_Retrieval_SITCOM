@@ -1,0 +1,19 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq #imagenet #ffhq
+  root: ./data/demo/
+  #root: ./data/demo_remain2/
+  #root: ./data/mb_imagenet/ 
+measurement:
+  operator:
+    name: motion_blur
+    kernel_size: 61
+    intensity: 0.5
+
+  noise: 
+    name: gaussian
+    sigma: 0.00
